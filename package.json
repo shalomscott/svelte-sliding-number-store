@@ -1,0 +1,32 @@
+{
+	"name": "svelte-sliding-number-store",
+	"version": "1.0.0",
+	"description": "A writable Svelte store that \"slides\" a numbers digits on change.",
+	"author": "Shalom Steinbach",
+	"license": "MIT",
+	"keywords": [
+		"svelte",
+		"store"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/shalomscott/svelte-sliding-number-store.git"
+	},
+	"bugs": {
+		"url": "https://github.com/shalomscott/svelte-sliding-number-store/issues"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"prepublishOnly": "rm -rf ./dist && npm run build"
+	},
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"devDependencies": {
+		"prettier": "^2.1.2",
+		"svelte": "^3.29.0",
+		"typescript": "^4.0.3"
+	},
+	"files": [
+		"dist/"
+	]
+}
